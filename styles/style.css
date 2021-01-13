@@ -1,0 +1,632 @@
+@font-face{
+  src: url("../font/Montserrat-Medium.ttf");
+  font-family: 'Monserrat';
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Monserrat';
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+button :hover{
+  cursor: pointer;
+}
+
+/*************************************header*/
+
+header .botonResposnive {
+  display: none; /*para quitarlo y despues ponerlo en el responsive*/
+}
+
+header {
+  height: auto;
+  width: 100%;
+  box-shadow: 0px 0px 4px 2px #353535;
+  background-color: #ffffff;
+}
+
+header .menu {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  width: 90px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  font-size: 20px;
+  color: #000000;
+}
+
+hr {
+  margin: 0px auto 0px;
+}
+
+/******************************************************************************************************************section*/
+
+/*************************************************************inicio*/
+section, header, footer{
+  overflow: hidden;
+}
+
+
+
+section .inicio {
+  width: 100%;
+  height: auto;
+}
+
+section .inicio .inicioContenedor0 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #ff9400, #ffa529);
+}
+
+section .inicio h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+section .inicio .inicioContenido1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+section .inicio .inicioContenido1 .inicioImagen3 img {
+  width: 700px;
+}
+
+section .inicio .inicioContenido1 .inicioInformacion2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+section .inicio .inicioContenido1 .inicioInformacion2 p {
+  margin: 100px auto 0;
+  font-size: 50px;
+}
+
+section .inicio .inicioContenido1 .inicioInformacion2 button {
+  width: 160px;
+  height: 45px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #000000;
+  color: #fdb500;
+  margin: 50px 0 0 0;
+}
+
+section .svg1 svg {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+/**************************************************************************servicios*/
+
+section .servicios {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+section .servicios h1 {
+  font-size: 90px;
+  text-align: center;
+}
+
+section .servicios .serviciosContenido {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+section .servicios .serviciosContenido .imagen img {
+  width: 500px;
+}
+
+section .servicios .serviciosContenido .informacion h4 {
+  font-size: 90px;
+  color: #ff9400;
+  text-align: center;
+}
+
+section .servicios .serviciosContenido .informacion p {
+  font-size: 50px;
+  text-align: center;
+  color: #6e6e6e;
+}
+
+section .servicios .serviciosContenido:nth-last-of-type(2n) {
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+}
+
+section .servicios .trazado2 {
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: -1;
+  right: -25%;
+  width: 60%;
+}
+
+section .servicios .trazado3 {
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: -1;
+  left: -30%;
+  width: 70%;
+}
+
+/******************************************final*/
+section .final {
+  display: flex;
+  flex-flow: column;
+}
+
+section .final h2 {
+  font-size: 70px;
+  text-align: center;
+  margin: 100px 0 20px 0;
+}
+
+section .final p {
+  margin: 45px 50px;
+  font-size: 50px;
+  color: #6e6e6e;
+}
+
+section .final a{
+  text-align: center;
+}
+
+section .final button {
+  margin: 0 auto;
+  width: 160px;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff9400;
+  color: #000000;
+}
+
+/**************************************************footer*/
+
+footer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #000000, #161616);
+}
+
+footer .general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+footer .general .logo img {
+  width: 200px;
+}
+
+footer .general .redessocioales{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .general .redessocioales img {
+  width: 100px;
+  margin: 0 20px;
+}
+
+footer .general .texto h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/***************************************************************************************************quienes somos*/
+
+.quienSomos .contenido {
+  width: 100%;
+  background: #ffa426;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.quienSomos .contenido img {
+  width: 600px;
+}
+
+.quienSomos svg {
+  width: 100%;
+  height: 50%;
+  display: block;
+}
+
+.quienSomos .contenido h1 {
+  margin: 20px 0;
+  font-size: 70px;
+}
+
+.quienSomos .contenido p {
+  font-size: 40px;
+}
+
+/****************************************************************contacto*/
+
+.contacto h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+.contacto .contenido {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.contacto .contenido img {
+  width: 50%;
+}
+
+.contacto .contenido .informacion h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.contacto .contenido .informacion p {
+  font-size: 20px;
+}
+
+.contacto .superior1 {
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: -1;
+  width: 60%;
+  top: -30%;
+  left: 10%;
+}
+
+.contacto .contenido .informacion form .textarea-2,
+.textarea-3 {
+  display: none;
+}
+
+/***********************************************responsive*/
+
+@media screen and (max-width: 800px) {
+  /****************************/
+  header .menu {
+    width: 30%;
+    height: 100%;
+    margin: 0px;
+    position: fixed;
+    flex-flow: column;
+    justify-content: start;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  header .menu .logo img {
+    width: 150px;
+  }
+
+  header .menu.show {
+    left: -100%;
+  }
+  
+  header nav ul {
+    flex-flow: column;
+  }
+
+  header nav ul li {
+    margin: 10px;
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid #fdb500;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  header .botonResposnive img {
+    width: 50px;
+  }
+
+  header .botonResposnive {
+    display: flex;
+    width: 100%;
+    background: #ffffff;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .botonResposnive h1{
+    color: #e28400;
+    padding: 10px;
+    }
+
+  header .botonResposnive .botonMennu {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  /****************************/
+
+  /*inicio*/
+
+  section .inicio .inicioContenedor0 h1 {
+    font-size: 50px;
+  }
+
+  section .inicio .inicioContenedor0 .inicioImagen3 {
+    width: 100%;
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section .inicio .inicioContenido1 .inicioInformacion2 {
+    justify-content: space-around;
+  }
+
+  section .inicio .inicioContenido1 .inicioInformacion2 p {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  section .servicios h1 {
+    font-size: 70px;
+  }
+
+  section .servicios .serviciosContenido {
+    margin-bottom: 70px;
+  }
+
+  section .servicios .serviciosContenido:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  section .servicios .serviciosContenido .imagen img {
+    width: 400px;
+  }
+
+  section .servicios .serviciosContenido .informacion h4 {
+    font-size: 75px;
+  }
+
+  section .servicios .serviciosContenido .informacion p {
+    font-size: 35px;
+  }
+
+  section .final h2 {
+    font-size: 50px;
+  }
+
+  section .final p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  footer .general .redessocioales img {
+    width: 55px;
+  }
+
+  /*quinenes somos*/
+
+  .quienSomos .contenido img {
+    width: 400px;
+  }
+
+  .quienSomos .contenido h1 {
+    font-size: 40px;
+  }
+
+  .quienSomos .contenido p {
+    font-size: 30px;
+  }
+
+  /*contacto*/
+
+  .contacto .superior1 {
+    position: fixed;
+  }
+
+  .contacto h1 {
+    font-size: 50px;
+  }
+
+  .contacto .contenido {
+    justify-content: space-around;
+  }
+
+  .contacto .contenido img {
+    width: 50%;
+  }
+
+  .contacto .contenido .informacion h2 {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+
+  .contacto .contenido .informacion p {
+    font-size: 15px;
+  }
+}
+
+/*************************************************/
+
+@media screen and (max-width: 506px) {
+  header .menu .logo img {
+    width: 98px;
+  }
+
+  footer .general .logo img {
+    width: 100px;
+  }
+
+  footer .general .redessocioales img {
+    width: 30px;
+    margin: 0 5%;
+  }
+
+  footer .general .informacion .texto h2 {
+    font-size: 13px;
+  }
+
+  /*quienSomos*/
+
+  .quienSomos .contenido p {
+    text-align: center;
+  }
+}
+
+/*************************************************/
+
+@media screen and (max-width: 480px) {
+  section .inicio .inicioContenedor0 h1 {
+    font-size: 35px;
+  }
+
+  section .inicio .inicioContenido1 .inicioImagen3 img {
+    width: 450px;
+  }
+
+  section .inicio .inicioContenido1 .inicioInformacion2 p {
+    font-size: 27px;
+    margin: 50px auto 0;
+  }
+
+  section .servicios h1 {
+    font-size: 45px;
+  }
+
+  section .servicios .serviciosContenido .imagen img {
+    width: 270px;
+  }
+
+  section .servicios .serviciosContenido .informacion h4 {
+    font-size: 55px;
+  }
+
+  section .servicios .serviciosContenido .informacion p {
+    font-size: 25px;
+  }
+
+  section .final h2 {
+    font-size: 30px;
+  }
+
+  section .final p {
+    font-size: 25px;
+    text-align: center;
+    margin: 45px 5px;
+  }
+
+  /*quienSomos*/
+
+  .quienSomos .contenido img {
+    width: 300px;
+  }
+
+  .quienSomos .contenido h1 {
+    font-size: 40px;
+  }
+
+  .quienSomos .contenido p {
+    font-size: 30px;
+  }
+}
+
+/********************************************************/
+
+@media screen and (max-width: 320px) {  
+  section .inicio .inicioContenedor0 h1 {
+    font-size: 22px;
+  }
+
+  section .inicio .inicioContenido1 .inicioImagen3 img {
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  section .inicio .inicioContenido1 .inicioInformacion2 p {
+    font-size: 20px;
+  }
+
+  section .servicios h1 {
+    font-size: 35px;
+  }
+
+  section .servicios .serviciosContenido .imagen img {
+    width: 250px;
+  }
+
+  section .servicios .serviciosContenido .informacion h4 {
+    font-size: 50px;
+  }
+
+  section .servicios .serviciosContenido .informacion p {
+    font-size: 20px;
+  }
+
+  section .final h2 {
+    font-size: 22px;
+  }
+
+  section .final p {
+    font-size: 21px;
+  }
+
+  /*quienSomos*/
+
+  .quienSomos .contenido h1 {
+    font-size: 30px;
+  }
+
+  .quienSomos .contenido p {
+    font-size: 25px;
+  }
+
+  /*contacto*/
+
+  .contacto h1 {
+    font-size: 40px;
+  }
+
+}
