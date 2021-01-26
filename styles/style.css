@@ -9,10 +9,6 @@
   font-family: 'Monserrat';
 }
 
-body{
-  display: flex;
-}
-
 a {
   text-decoration: none;
 }
@@ -390,7 +386,7 @@ footer .general .texto h2 {
   width: 100%;
   height:auto;
   background: linear-gradient(180deg, #ff9500,#ffa629, #ff9a0c15);
-
+  padding-bottom: 150px;
 }
 
 .svg-contact-superior{
@@ -408,15 +404,15 @@ footer .general .texto h2 {
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: row-reverse;
-  justify-content: space-between;
+  flex-flow: row;
+  justify-content: space-around;
   flex-wrap: wrap;
   overflow: hidden;
   animation: mover-0 1s ease-in;
 }
 
-.contacto .contenido img {
-  width: 50%;
+.contacto .contenido .imagen-contacto {
+  width: 500px;
 }
 
 .contacto .contenido .informacion h2 {
@@ -426,15 +422,6 @@ footer .general .texto h2 {
 
 .contacto .contenido .informacion p {
   font-size: 20px;
-}
-
-.contacto .superior1 {
-  transform: rotate(90deg);
-  position: absolute;
-  z-index: -1;
-  width: 60%;
-  top: -30%;
-  left: 10%;
 }
 
 /***********************************************responsive*/
@@ -503,21 +490,12 @@ footer .general .texto h2 {
     color: #e28400;
     padding: 10px;
     }
-
-  /* header .botonResposnive .icono {
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000000;
-    cursor: pointer;
-  } */
-
   /****************************/
 
   /*inicio*/
 
   section .inicio .inicioContenedor0 h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   section .inicio .inicioContenedor0 .inicioImagen3 {
@@ -533,7 +511,7 @@ footer .general .texto h2 {
 
   section .inicio .inicioContenido1 .inicioInformacion2 p {
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
   }
 
   section .servicios h1 {
@@ -573,6 +551,10 @@ footer .general .texto h2 {
     width: 40px;
   }
 
+  footer .general .logo img {
+    width: 100px;
+  }
+
   /*quinenes somos*/
 
   .quienSomos .contenido img {
@@ -588,18 +570,15 @@ footer .general .texto h2 {
   }
 
   /*contacto*/
-
-  .contacto .superior1 {
-    position: fixed;
+  .contacto{
+    
   }
 
   .contacto h1 {
     font-size: 50px;
   }
 
-  .contacto .contenido {
-    justify-content: space-around;
-  }
+  
 
   .contacto .contenido img {
     width: 50%;
@@ -616,6 +595,16 @@ footer .general .texto h2 {
 }
 
 /*************************************************/
+@media screen and (max-width: 600px){
+  
+ 
+  
+}
+
+
+/* ******************************* */
+
+
 
 @media screen and (max-width: 506px) {
   header .menu .logo img {
@@ -639,6 +628,12 @@ footer .general .texto h2 {
 
   .quienSomos .contenido p {
     text-align: center;
+  }
+
+  /* contacto */
+  .contacto .contenido .imagen-contacto {
+    width: 300px;
+  margin-bottom: 50px;
   }
 }
 
@@ -683,6 +678,11 @@ footer .general .texto h2 {
     text-align: center;
     margin: 45px 5px;
   }
+
+  footer .general .logo a img{
+    width: 60px;
+  }
+
 
   /*quienSomos*/
 
@@ -753,6 +753,17 @@ footer .general .texto h2 {
 
   .contacto h1 {
     font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width: 320px){
+  footer .general .informacion .redessocioales img{
+    width: 20px;
+  }
+
+  footer .general .informacion .texto h2{
+    font-size: 9px;
   }
 
 }
