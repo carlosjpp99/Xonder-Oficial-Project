@@ -360,6 +360,7 @@ footer .general .texto h2 {
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding: 120px 0;
 }
 
 .quienSomos .contenido img {
