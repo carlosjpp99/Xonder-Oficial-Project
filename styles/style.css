@@ -504,10 +504,14 @@ footer .general .texto h2 {
   }
 
   section .inicio .inicioContenedor0 .inicioImagen3 {
-    width: 50%;
-    /* overflow: hidden;  */
+    width: 100%;
+    overflow: hidden; 
     display: flex;
     justify-content: space-around;
+  }
+
+  section .inicio .inicioContenedor0 .inicioImagen3 .imagen-3{
+    width: 80%;
   }
 
   section .inicio .inicioContenido1 .inicioInformacion2 {
