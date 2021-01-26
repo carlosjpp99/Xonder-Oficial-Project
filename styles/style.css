@@ -9,6 +9,10 @@
   font-family: 'Monserrat';
 }
 
+p{
+  letter-spacing: -0.1em;
+}
+
 a {
   text-decoration: none;
 }
