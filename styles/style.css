@@ -1,11 +1,11 @@
-@font-face{
-  src: url("../font/Montserrat-Medium.ttf");
-  font-family: 'Monserrat';
-}
-
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Monserrat';
+}
+
+@font-face{
+  src: url("../font/Montserrat-Medium.ttf");
   font-family: 'Monserrat';
 }
 
@@ -21,9 +21,14 @@ button :hover{
   cursor: pointer;
 }
 
+section, header, footer{
+  overflow: hidden;
+}
+
 
 
 /* Animacion boton menu */
+
 .lbl-icono{
   margin: 20px;
   width: 50px;
@@ -69,7 +74,31 @@ button :hover{
   top: 10px;
 }
 
-/*Fin animacion boton menu */
+/*FIN*/
+
+/* Animacion de scroll para los textos */
+
+.animacion-scroll-arriba{
+  opacity: 0;
+  transition: all 2s;
+}
+
+.mostrarAarriba{
+  animation: mostrarArriba 2s;
+}
+
+@keyframes mostrarArriba{
+  0%{
+    transform: translateX(50px);
+  }
+
+  100%{
+    transform: translatex(0);
+  }
+}
+
+/* FIN */
+
 
 /*************************************header*/
 
@@ -123,11 +152,6 @@ hr {
   display: none;
 }
 
-section, header, footer{
-  overflow: hidden;
-}
-
-
 /******************************************************************************************************************section*/
 
 /*************************************************************inicio*/
@@ -144,6 +168,7 @@ section .inicio .inicioContenedor0 {
 }
 
 section .inicio h1 {
+  padding: 0 5px;
   text-align: center;
   font-size: 60px;
   padding-top: 80px;
@@ -191,6 +216,7 @@ section .inicio .inicioContenido1 .inicioInformacion2 {
 }
 
 section .inicio .inicioContenido1 .inicioInformacion2 p {
+  padding: 0 5px;
   margin: 100px auto 0;
   font-size: 25px;
   animation: mover-0 1s ease-in;
@@ -766,6 +792,10 @@ footer .general .texto h2 {
 }
 
 @media screen and (max-width: 320px){
+  footer .general{
+    flex-wrap: nowrap;
+  }
+  
   footer .general .informacion .redessocioales img{
     width: 20px;
   }
